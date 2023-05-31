@@ -1,15 +1,5 @@
 
 Exploring Global Seafood Production: Capture Fisheries Vs Aquaculture Farming
----
-title: "Global Seafood Production: Capture Fisheries Vs Aquaculture Farming"
-author: "Huma Ali Meer"
-date: "12/8/2021"
-output: 
-  powerpoint_presentation:
-    reference_doc: style_template.pptx
-    slide_level: 2
----
-
 # Overview of the Data and Domain of Research
 
 ## Dataset: Global Seafood Production
