@@ -4,8 +4,7 @@ Exploring Global Seafood Production: Capture Fisheries Vs Aquaculture Farming
 
 ## Dataset: Global Seafood Production
 
-::: {.columns}
-::: {.column}
+
 ### [Tidy Tuesday Week 42 2021](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-10-12/readme.md)
 
 These data are a collection of datasets on global seafood production and consumption from OurWorldinData.org.
@@ -13,15 +12,13 @@ These data are a collection of datasets on global seafood production and consump
 According to theOurWorldinData.org website, Aquaculture refers to the practice of fish and seafood farming.
 
 The distinction between farmed fish and wild catch is similar to the difference between raising livestock rather than hunting wild animals.
-:::
 
-::: {.column}
+
+
 ![](tidy_seafood_img.jpg)
-:::
-:::
 
-::: {.columns}
-::: {.column}
+
+
 ## Questions
 
 1.  How has the global capture fisheries production and global aquaculture production performed, relative to each other?
@@ -29,13 +26,9 @@ The distinction between farmed fish and wild catch is similar to the difference 
 2.  What has been the trend for fish stocks that are farmed unsustainably versus fish stocks that were farmed sustainably over the years of 1974-2017?
 
 3.  Which countries produce the most seafood using Aquaculture?
-:::
 
-::: {.column}
 ![](overfishing.png)
 
-:::
-:::
 
 # Load packages and data
 
@@ -92,8 +85,7 @@ aqua_vs_cap_prod_dat <- aqua_vs_cap_prod |>
 
 ## Build Base Plot
 
-::: {.columns}
-::: {.column}
+
 ```{r plot1}
 p <- aqua_vs_cap_prod_dat |>
   ggplot(aes(x = Year)) +
@@ -115,19 +107,15 @@ p <- aqua_vs_cap_prod_dat |>
   annotate(geom = "text", x = 2005, y = 15000000, label = "Farmed seafood") +
   annotate(geom = "text", x = 1970, y = 85000000, label = "Wild-caught seafood")
 ```
-:::
 
-::: {.column}
-```{r, echo = FALSE}
+```{r, echo = TRUE}
 plot(p)
 ```
-:::
-:::
+
 
 ## Add theme and labels
 
-::: {.columns}
-::: {.column}
+
 ```{r}
 p <- p +
   labs(
@@ -139,9 +127,7 @@ p <- p +
     panel.grid.major.y = element_blank(),
   )
 ```
-:::
 
-::: {.column}
 ```{r, echo = FALSE}
 plot(p)
 ```
